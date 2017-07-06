@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- Document type Declration of HTML5 -->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ACADGILD</title>
+    <!--Link to StyleSheet-->
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <h1>
+                <a href="#">Acadgild</a>
+            </h1>
+
+            <nav>
+                <ul class="clearfix">
+                    <li>
+                        <a href="#">
+                            <h4>Home</h4>
+                        </a>
+                    </li>
+                    <!--                    Link to the individual about page with route to the same                -->
+                    <li>
+                        <a href="../html/about.html">
+                            <h4>About</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <h4>Contact</h4>
+                        </a>
+                    </li>
+                    <!--====================================DROPDOWN MENU (SESSION-3 ASSIGNMENT-3)=========================================-->
+                    <li>
+                        <a href="#">
+                            <h4 id="social">Social</h4>
+                            <div class="arrow"></div>
+                            <ul>
+                                <li>Twitter</li>
+                                <li>Facebook</li>
+                                <li>Instagram</li>
+                                <li>Snapchat</li>
+                                <li>Tumblr</li>
+                            </ul>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </div>
+    </header>
+
+    <main>
+        <form action="#">
+            <section class="form-container">
+                <h2>sign-up form</h2>
+                <section>
+                    <h3>username</h3>
+                    <label for="username">Username :</label>
+                    <input type="text" name="username" id="username" maxlength="20" required tabindex="1" placeholder="e.g John Doe">
+                </section>
+                <section>
+                    <h3>email</h3>
+                    <label for="email">Email :</label>
+                    <input type="email" name="email" id="email" required tabindex="2" placeholder="e.g johndoe@example.com">
+                </section>
+                <section>
+                    <h3>password</h3>
+                    <label for="password">Password :</label>
+                    <input type="password" name="password" id="password" tabindex="3">
+                    <!--Div container for confirm password section-->
+                    <div>
+                        <label for="confirm-password">Confirm-Password :</label>
+                        <input type="password" name="confirm-password" id="confirm-password" tabindex="4">
+                    </div>
+                </section>
+                <section>
+                    <h3>gender</h3>
+                    <label for="gender">Gender :</label>
+                    <div class="radio-box">
+                        <section>
+                            <input type="radio" name="gender" id="male" value="male" checked tabindex="5"><label for="male">Male</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="gender" id="female" value="female" tabindex="6"><label for="female">Female</label>
+                        </section>
+                        <section>
+                            <input type="radio" name="gender" id="other" value="other" tabindex="7"><label for="other">Other</label>
+                        </section>
+                    </div>
+                </section>
+                <section>
+                    <h3>Number of Courses Taken</h3>
+                    <label for="courses-taken">Age :</label><input type="number" name="courses-taken" id="courses-taken" max="50" min="18" step="1" value="18">
+                </section>
+                <section>
+                    <h3>Availibility for the days of the week</h3>
+                    <fieldset>
+                        <legend>Choose days for classes</legend>
+                        <div class="checkbox-container clearfix">
+                            <div id="checkbox1">
+                                <input type="checkbox" name="days" id="monday" value="monday"><label for="monday">monday</label><br>
+                                <input type="checkbox" name="days" id="tuesday" value="tuesday"><label for="tuesday">tuesday</label><br>
+                                <input type="checkbox" name="days" id="wednesday" value="wednesday"><label for="wednesday">wednesday</label><br>
+                            </div>
+                            <div id="checkbox2">
+                                <input type="checkbox" name="days" id="thursday" value="thursday"><label for="thursday">thursday</label><br>
+                                <input type="checkbox" name="days" id="friday" value="friday"><label for="friday">friday</label><br>
+                                <input type="checkbox" name="days" id="saturday" value="saturday"><label for="saturday">saturday</label><br>
+                            </div>
+                        </div>
+                    </fieldset>
+                </section>
+                <section id="submit-form">
+                    <h3>Submit Button</h3>
+                    <button type="submit">Submit Form</button>
+                    <button type="reset" disabled>Reset Form</button>
+                </section>
+            </section>
+        </form>
+
+    </main>
+
+    <footer>
+        <p>
+            <center><small>©Copyright 2017 programmers inc.</small></center>
+        </p>
+    </footer>
+    <!--Link to Scripts start Here -->
+    <script src="../javascript/scripts1.js"></script>
+</body>
+
+</html>
